@@ -1,0 +1,39 @@
+<div class="container margin-container">
+  <h1>Recipes for category {{nameofCategory}}</h1>
+  <div class="row">
+    <div class="col-3 offset-md-7 pull-right"> <input class="form-control" type="text" [(ngModel)]="filterValue"
+        (input)="searchByFiltrer(filterValue)" placeholder="Search"> </div>
+    <div class="col-2 pull-right no-padding-left">
+      <button *ngIf="isUserLoggedIn" class="btn btn-info full-width" type="button" [routerLink]="['upsert-recipe']">Add
+        new recipe</button>
+    </div>
+  </div>
+  <br>
+  <div class="row no-margin-left no-margin-right">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Cost</th>
+          <th scope="col">Description</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let recipe of recipes">
+          <td>{{recipe.name}}</td>
+          <td>{{recipe.totalCost}} KM</td>
+          <td title="{{recipe.description}}">{{(recipe.description .length>10)? (recipe.description |
+            slice:0:200)+'...':(recipe.description ) }}</td>
+          <td><button (click)="getRecipeDetails(recipe.id)" class="details btn btn-outline-dark">Details</button></td>
+          <td class="upsert-table-btn" *ngIf="isUserLoggedIn">
+            <button type="button" class="btn btn-info mr-2" [routerLink]="['upsert-recipe', recipe.id]">Edit</button>
+            <button type="button" class="btn btn-danger" (click)="delete(recipe.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-dark" type="button" (click)="loadMore()" [disabled]="!isLodaMore">Load more</button>
+  </div>
+</div>

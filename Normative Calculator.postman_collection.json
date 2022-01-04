@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "1362f76f-27e2-4109-bd91-a7dd2a2ca962",
+		"name": "Normative Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetIngredients Without User Return Unautorized",
+			"protocolProfileBehavior": {
+				"disableCookies": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/Ingredients",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"Ingredients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecipeCategories With Anonymous User Return Ok",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/RecipeCategories",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"RecipeCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetIngredients With User Return Ok",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/userinfo.email",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "735288512086-smhnln723824mb62kspu7amfesn63j9m.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://localhost:5001/signin-google",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "auth_cookie",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": " https://accounts.google.com/o/oauth2/auth",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/Ingredients",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"Ingredients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertIngredient Without Name Return Bad Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"unitPrice\": 5,\r\n  \"unitQuantity\": 5,\r\n  \"measureUnit\": \"kg\",\r\n  \"costIngredient\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/Ingredients",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"Ingredients"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:5001/api"
+		},
+		{
+			"key": "cookie",
+			"value": ""
+		}
+	]
+}

@@ -1,0 +1,1002 @@
+[
+  {
+    "Id": 72,
+    "Name": "sea salt",
+    "UnitPrice": 0.0025,
+    "UnitQuantity": 2,
+    "MeasureUnit": "kg",
+    "CostIngredient": 5,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 81,
+    "Name": "fresh basil",
+    "UnitPrice": 0.002857142857142857,
+    "UnitQuantity": 7,
+    "MeasureUnit": "L",
+    "CostIngredient": 20,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 56,
+    "Name": "chili powder",
+    "UnitPrice": 10.5,
+    "UnitQuantity": 4,
+    "MeasureUnit": "ml",
+    "CostIngredient": 42,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 85,
+    "Name": "parmesan cheese",
+    "UnitPrice": 1,
+    "UnitQuantity": 10,
+    "MeasureUnit": "ml",
+    "CostIngredient": 10,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 88,
+    "Name": "chopped walnuts",
+    "UnitPrice": 0.005111111111111111,
+    "UnitQuantity": 9,
+    "MeasureUnit": "kg",
+    "CostIngredient": 46,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 50,
+    "Name": "margarine",
+    "UnitPrice": 0.043,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kg",
+    "CostIngredient": 43,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 92,
+    "Name": "chicken stock",
+    "UnitPrice": 4.8,
+    "UnitQuantity": 10,
+    "MeasureUnit": "gr",
+    "CostIngredient": 48,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 7,
+    "Name": "all-purpose flour",
+    "UnitPrice": 0.005,
+    "UnitQuantity": 9,
+    "MeasureUnit": "kg",
+    "CostIngredient": 45,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 61,
+    "Name": "egg whites",
+    "UnitPrice": 15.5,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 31,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 76,
+    "Name": "melted butter",
+    "UnitPrice": 0.1,
+    "UnitQuantity": 10,
+    "MeasureUnit": "ml",
+    "CostIngredient": 1,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 44,
+    "Name": "mayonnaise",
+    "UnitPrice": 0.005333333333333333,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 16,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 64,
+    "Name": "lemon",
+    "UnitPrice": 5,
+    "UnitQuantity": 8,
+    "MeasureUnit": "gr",
+    "CostIngredient": 40,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 89,
+    "Name": "ground ginger",
+    "UnitPrice": 4.222222222222222,
+    "UnitQuantity": 9,
+    "MeasureUnit": "gr",
+    "CostIngredient": 38,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 86,
+    "Name": "juice",
+    "UnitPrice": 0.010333333333333333,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 31,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 46,
+    "Name": "soy sauce",
+    "UnitPrice": 2,
+    "UnitQuantity": 3,
+    "MeasureUnit": "ml",
+    "CostIngredient": 6,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 33,
+    "Name": "cream cheese",
+    "UnitPrice": 4,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 8,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 22,
+    "Name": "cloves garlic",
+    "UnitPrice": 2.2,
+    "UnitQuantity": 10,
+    "MeasureUnit": "gr",
+    "CostIngredient": 22,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 19,
+    "Name": "vanilla extract",
+    "UnitPrice": 5.875,
+    "UnitQuantity": 8,
+    "MeasureUnit": "ml",
+    "CostIngredient": 47,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 54,
+    "Name": "fresh cilantro",
+    "UnitPrice": 10,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 20,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 28,
+    "Name": "green onions",
+    "UnitPrice": 11,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kom",
+    "CostIngredient": 33,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 73,
+    "Name": "shrimp",
+    "UnitPrice": 1,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 2,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 100,
+    "Name": "raisins",
+    "UnitPrice": 0.0015,
+    "UnitQuantity": 4,
+    "MeasureUnit": "L",
+    "CostIngredient": 6,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 48,
+    "Name": "heavy cream",
+    "UnitPrice": 3.2,
+    "UnitQuantity": 10,
+    "MeasureUnit": "ml",
+    "CostIngredient": 32,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 60,
+    "Name": "dijon mustard",
+    "UnitPrice": 10.75,
+    "UnitQuantity": 4,
+    "MeasureUnit": "kom",
+    "CostIngredient": 43,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 41,
+    "Name": "grated parmesan cheese",
+    "UnitPrice": 11.25,
+    "UnitQuantity": 4,
+    "MeasureUnit": "kom",
+    "CostIngredient": 45,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 30,
+    "Name": "vanilla",
+    "UnitPrice": 5.75,
+    "UnitQuantity": 8,
+    "MeasureUnit": "kom",
+    "CostIngredient": 46,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 62,
+    "Name": "bacon",
+    "UnitPrice": 0.019,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kg",
+    "CostIngredient": 19,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 74,
+    "Name": "diced tomatoes",
+    "UnitPrice": 1.5,
+    "UnitQuantity": 6,
+    "MeasureUnit": "ml",
+    "CostIngredient": 9,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 32,
+    "Name": "honey",
+    "UnitPrice": 0.012,
+    "UnitQuantity": 3,
+    "MeasureUnit": "L",
+    "CostIngredient": 36,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 9,
+    "Name": "olive oil",
+    "UnitPrice": 2.25,
+    "UnitQuantity": 4,
+    "MeasureUnit": "gr",
+    "CostIngredient": 9,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 21,
+    "Name": "carrots",
+    "UnitPrice": 0.0026666666666666666,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 8,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 69,
+    "Name": "cooking spray",
+    "UnitPrice": 0.002,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kg",
+    "CostIngredient": 2,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 93,
+    "Name": "buttermilk",
+    "UnitPrice": 10.5,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 21,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 49,
+    "Name": "cinnamon",
+    "UnitPrice": 5.333333333333333,
+    "UnitQuantity": 6,
+    "MeasureUnit": "ml",
+    "CostIngredient": 32,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 27,
+    "Name": "ground cinnamon",
+    "UnitPrice": 0.6,
+    "UnitQuantity": 10,
+    "MeasureUnit": "gr",
+    "CostIngredient": 6,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 84,
+    "Name": "balsamic vinegar",
+    "UnitPrice": 0.028,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kg",
+    "CostIngredient": 28,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 70,
+    "Name": "cayenne pepper",
+    "UnitPrice": 0.000375,
+    "UnitQuantity": 8,
+    "MeasureUnit": "kg",
+    "CostIngredient": 3,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 18,
+    "Name": "lemon juice",
+    "UnitPrice": 3.125,
+    "UnitQuantity": 8,
+    "MeasureUnit": "kom",
+    "CostIngredient": 25,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 3,
+    "Name": "butter",
+    "UnitPrice": 4.5,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 9,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 98,
+    "Name": "red pepper",
+    "UnitPrice": 26,
+    "UnitQuantity": 1,
+    "MeasureUnit": "ml",
+    "CostIngredient": 26,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 96,
+    "Name": "light brown sugar",
+    "UnitPrice": 15.5,
+    "UnitQuantity": 2,
+    "MeasureUnit": "gr",
+    "CostIngredient": 31,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 42,
+    "Name": "minced garlic",
+    "UnitPrice": 0.0049,
+    "UnitQuantity": 10,
+    "MeasureUnit": "L",
+    "CostIngredient": 49,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 95,
+    "Name": "fresh ginger",
+    "UnitPrice": 0.013,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 39,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 97,
+    "Name": "lime juice",
+    "UnitPrice": 0.8888888888888888,
+    "UnitQuantity": 9,
+    "MeasureUnit": "kom",
+    "CostIngredient": 8,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 37,
+    "Name": "fresh parsley",
+    "UnitPrice": 7.333333333333333,
+    "UnitQuantity": 6,
+    "MeasureUnit": "ml",
+    "CostIngredient": 44,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 8,
+    "Name": "water",
+    "UnitPrice": 41,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kom",
+    "CostIngredient": 41,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 94,
+    "Name": "chicken",
+    "UnitPrice": 12.666666666666666,
+    "UnitQuantity": 3,
+    "MeasureUnit": "ml",
+    "CostIngredient": 38,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 53,
+    "Name": "shallots",
+    "UnitPrice": 3.2,
+    "UnitQuantity": 10,
+    "MeasureUnit": "gr",
+    "CostIngredient": 32,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 38,
+    "Name": "garlic powder",
+    "UnitPrice": 0.006666666666666667,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 20,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 16,
+    "Name": "brown sugar",
+    "UnitPrice": 3.111111111111111,
+    "UnitQuantity": 9,
+    "MeasureUnit": "kom",
+    "CostIngredient": 28,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 11,
+    "Name": "milk",
+    "UnitPrice": 0.0065,
+    "UnitQuantity": 2,
+    "MeasureUnit": "L",
+    "CostIngredient": 13,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 25,
+    "Name": "tomatoes",
+    "UnitPrice": 0.018,
+    "UnitQuantity": 1,
+    "MeasureUnit": "L",
+    "CostIngredient": 18,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 66,
+    "Name": "dried oregano",
+    "UnitPrice": 0.0037142857142857142,
+    "UnitQuantity": 7,
+    "MeasureUnit": "kg",
+    "CostIngredient": 26,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 14,
+    "Name": "vegetable oil",
+    "UnitPrice": 0.00175,
+    "UnitQuantity": 8,
+    "MeasureUnit": "L",
+    "CostIngredient": 14,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 15,
+    "Name": "extra-virgin olive oil",
+    "UnitPrice": 1.8888888888888888,
+    "UnitQuantity": 9,
+    "MeasureUnit": "gr",
+    "CostIngredient": 17,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 91,
+    "Name": "chopped pecans",
+    "UnitPrice": 0.0125,
+    "UnitQuantity": 4,
+    "MeasureUnit": "kg",
+    "CostIngredient": 50,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 35,
+    "Name": "red onion",
+    "UnitPrice": 0.014,
+    "UnitQuantity": 2,
+    "MeasureUnit": "L",
+    "CostIngredient": 28,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 58,
+    "Name": "red bell pepper",
+    "UnitPrice": 3.6,
+    "UnitQuantity": 5,
+    "MeasureUnit": "ml",
+    "CostIngredient": 18,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 2,
+    "Name": "sugar",
+    "UnitPrice": 0.0035,
+    "UnitQuantity": 4,
+    "MeasureUnit": "kg",
+    "CostIngredient": 14,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 12,
+    "Name": "garlic cloves",
+    "UnitPrice": 7.666666666666667,
+    "UnitQuantity": 3,
+    "MeasureUnit": "ml",
+    "CostIngredient": 23,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 6,
+    "Name": "eggs",
+    "UnitPrice": 10,
+    "UnitQuantity": 5,
+    "MeasureUnit": "gr",
+    "CostIngredient": 50,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 79,
+    "Name": "zucchini",
+    "UnitPrice": 0.008166666666666666,
+    "UnitQuantity": 6,
+    "MeasureUnit": "kg",
+    "CostIngredient": 49,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 67,
+    "Name": "scallions",
+    "UnitPrice": 0.003125,
+    "UnitQuantity": 8,
+    "MeasureUnit": "L",
+    "CostIngredient": 25,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 23,
+    "Name": "flour",
+    "UnitPrice": 0.008166666666666666,
+    "UnitQuantity": 6,
+    "MeasureUnit": "L",
+    "CostIngredient": 49,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 63,
+    "Name": "powdered sugar",
+    "UnitPrice": 0.013,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 39,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 68,
+    "Name": "shredded cheddar cheese",
+    "UnitPrice": 3.6,
+    "UnitQuantity": 5,
+    "MeasureUnit": "gr",
+    "CostIngredient": 18,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 52,
+    "Name": "paprika",
+    "UnitPrice": 0.002,
+    "UnitQuantity": 8,
+    "MeasureUnit": "kg",
+    "CostIngredient": 16,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 90,
+    "Name": "semisweet chocolate",
+    "UnitPrice": 0.017,
+    "UnitQuantity": 2,
+    "MeasureUnit": "kg",
+    "CostIngredient": 34,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 5,
+    "Name": "onion",
+    "UnitPrice": 5,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kom",
+    "CostIngredient": 5,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 82,
+    "Name": "garlic",
+    "UnitPrice": 0.011666666666666667,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kg",
+    "CostIngredient": 35,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 77,
+    "Name": "spinach",
+    "UnitPrice": 0.048,
+    "UnitQuantity": 1,
+    "MeasureUnit": "L",
+    "CostIngredient": 48,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 75,
+    "Name": "strawberries",
+    "UnitPrice": 0.005222222222222222,
+    "UnitQuantity": 9,
+    "MeasureUnit": "L",
+    "CostIngredient": 47,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 65,
+    "Name": "orange juice",
+    "UnitPrice": 0.0016,
+    "UnitQuantity": 10,
+    "MeasureUnit": "kg",
+    "CostIngredient": 16,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 26,
+    "Name": "kosher salt",
+    "UnitPrice": 0.1,
+    "UnitQuantity": 10,
+    "MeasureUnit": "gr",
+    "CostIngredient": 1,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 31,
+    "Name": "sour cream",
+    "UnitPrice": 1,
+    "UnitQuantity": 7,
+    "MeasureUnit": "gr",
+    "CostIngredient": 7,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 20,
+    "Name": "freshly ground pepper",
+    "UnitPrice": 40,
+    "UnitQuantity": 1,
+    "MeasureUnit": "kom",
+    "CostIngredient": 40,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 40,
+    "Name": "oil",
+    "UnitPrice": 4.25,
+    "UnitQuantity": 4,
+    "MeasureUnit": "kom",
+    "CostIngredient": 17,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 78,
+    "Name": "ground nutmeg",
+    "UnitPrice": 2.5,
+    "UnitQuantity": 8,
+    "MeasureUnit": "ml",
+    "CostIngredient": 20,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 17,
+    "Name": "baking powder",
+    "UnitPrice": 0.005571428571428572,
+    "UnitQuantity": 7,
+    "MeasureUnit": "kg",
+    "CostIngredient": 39,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 47,
+    "Name": "fresh lemon juice",
+    "UnitPrice": 2.75,
+    "UnitQuantity": 4,
+    "MeasureUnit": "gr",
+    "CostIngredient": 11,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 87,
+    "Name": "apples",
+    "UnitPrice": 0.00375,
+    "UnitQuantity": 4,
+    "MeasureUnit": "kg",
+    "CostIngredient": 15,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 4,
+    "Name": "black pepper",
+    "UnitPrice": 6.5,
+    "UnitQuantity": 6,
+    "MeasureUnit": "ml",
+    "CostIngredient": 39,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 51,
+    "Name": "celery",
+    "UnitPrice": 1.6666666666666667,
+    "UnitQuantity": 3,
+    "MeasureUnit": "gr",
+    "CostIngredient": 5,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 83,
+    "Name": "dry white wine",
+    "UnitPrice": 22,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 44,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 80,
+    "Name": "egg yolks",
+    "UnitPrice": 0.5,
+    "UnitQuantity": 2,
+    "MeasureUnit": "ml",
+    "CostIngredient": 1,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 39,
+    "Name": "cornstarch",
+    "UnitPrice": 0.0028333333333333335,
+    "UnitQuantity": 6,
+    "MeasureUnit": "L",
+    "CostIngredient": 17,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 13,
+    "Name": "unsalted butter",
+    "UnitPrice": 9,
+    "UnitQuantity": 2,
+    "MeasureUnit": "gr",
+    "CostIngredient": 18,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 43,
+    "Name": "white sugar",
+    "UnitPrice": 6.25,
+    "UnitQuantity": 8,
+    "MeasureUnit": "gr",
+    "CostIngredient": 50,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 36,
+    "Name": "chicken broth",
+    "UnitPrice": 9.333333333333334,
+    "UnitQuantity": 3,
+    "MeasureUnit": "kom",
+    "CostIngredient": 28,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 71,
+    "Name": "ground beef",
+    "UnitPrice": 2.6666666666666665,
+    "UnitQuantity": 3,
+    "MeasureUnit": "ml",
+    "CostIngredient": 8,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 45,
+    "Name": "ground cumin",
+    "UnitPrice": 0.004,
+    "UnitQuantity": 5,
+    "MeasureUnit": "kg",
+    "CostIngredient": 20,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 10,
+    "Name": "pepper",
+    "UnitPrice": 7,
+    "UnitQuantity": 7,
+    "MeasureUnit": "kom",
+    "CostIngredient": 49,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 57,
+    "Name": "worcestershire sauce",
+    "UnitPrice": 0.0065,
+    "UnitQuantity": 6,
+    "MeasureUnit": "L",
+    "CostIngredient": 39,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 34,
+    "Name": "granulated sugar",
+    "UnitPrice": 0.00975,
+    "UnitQuantity": 4,
+    "MeasureUnit": "L",
+    "CostIngredient": 39,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 55,
+    "Name": "potatoes",
+    "UnitPrice": 0.0001,
+    "UnitQuantity": 10,
+    "MeasureUnit": "kg",
+    "CostIngredient": 1,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 1,
+    "Name": "salt",
+    "UnitPrice": 0.038,
+    "UnitQuantity": 1,
+    "MeasureUnit": "L",
+    "CostIngredient": 38,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 99,
+    "Name": "chicken breasts",
+    "UnitPrice": 0.008,
+    "UnitQuantity": 2,
+    "MeasureUnit": "kg",
+    "CostIngredient": 16,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 29,
+    "Name": "large eggs",
+    "UnitPrice": 0.0028888888888888888,
+    "UnitQuantity": 9,
+    "MeasureUnit": "L",
+    "CostIngredient": 26,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  },
+  {
+    "Id": 59,
+    "Name": "canola oil",
+    "UnitPrice": 0.002625,
+    "UnitQuantity": 8,
+    "MeasureUnit": "L",
+    "CostIngredient": 21,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.025Z"
+  },
+  {
+    "Id": 24,
+    "Name": "baking soda",
+    "UnitPrice": 1.5,
+    "UnitQuantity": 10,
+    "MeasureUnit": "gr",
+    "CostIngredient": 15,
+    "IsDeleted": false,
+    "CreatedAt": "2021-12-01T10:29:53.024Z"
+  }
+]

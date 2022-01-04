@@ -1,0 +1,57 @@
+<div class="modal-header">
+  <h5 class="modal-title" *ngIf="!ingredientDetails">Add new ingredient</h5>
+  <h5 class="modal-title" *ngIf="ingredientDetails">Edit  ingredient</h5>
+  <button type="button" class="close" data-dismiss="modal" (click)="closeModal('dismiss')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <form [formGroup]="ingredientForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">*Name</label>
+      <input type="text" id="name" name="name" formControlName="name" class="form-control"
+        [ngClass]="{ 'is-invalid':form.name.touched && form.name.errors }">
+      <div *ngIf="form.name.errors" class="invalid-feedback">
+        <div *ngIf="form.name.errors.required">Name is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="unitQuantity">*Unit quantity</label>
+      <input type="text" id="unitQuantity" name="unitQuantity" formControlName="unitQuantity" class="form-control"
+        [ngClass]="{ 'is-invalid':form.unitQuantity.touched && form.unitQuantity.errors }">
+      <div *ngIf="form.unitQuantity.errors" class="invalid-feedback">
+        <div *ngIf="form.unitQuantity.errors.required">Unit quantity is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="measureUnit_Id">*Measure Unit </label>
+      <select id="measureUnit" name="measureUnit" formControlName="measureUnit" class="form-control"
+        [ngClass]="{ 'is-invalid':form.measureUnit.touched && form.measureUnit.errors }">
+        <option [ngValue]="unit" *ngFor="let unit of enumUnitKeys">
+          {{measureUnits[unit]}}
+        </option>
+      </select>
+      <div *ngIf="form.measureUnit.errors" class="invalid-feedback">
+        <div *ngIf="form.measureUnit.errors.required">Measure Unit is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="unitPrice">*Unit price</label>
+      <input type="text" id="unitPrice" name="unitPrice" formControlName="unitPrice" class="form-control"
+        [ngClass]="{ 'is-invalid':form.unitPrice.touched && form.unitPrice.errors }">
+      <div *ngIf="form.unitPrice.errors" class="invalid-feedback">
+        <div *ngIf="form.unitPrice.errors.required">Unit price is required</div>
+      </div>
+    </div>
+    <hr />
+    <div class="form-group" style="float: right;">
+      <button class="btn btn-outline-dark" type="button" (click)="closeModal('close')"> Cancel</button>
+      <button type="submit" [disabled]="!ingredientForm.valid" class="btn btn-success ml-2">Submit</button>
+    </div>
+
+  </form>
+</div>

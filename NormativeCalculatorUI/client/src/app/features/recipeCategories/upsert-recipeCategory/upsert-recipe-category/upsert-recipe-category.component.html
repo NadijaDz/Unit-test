@@ -1,0 +1,24 @@
+
+<div class="container" style="margin-top: 100px;">
+    <h1 *ngIf="isAddMode">Add new recipe category</h1>
+    <h1 *ngIf="!isAddMode">Edit recipe category</h1>
+
+  <div class="modal-body">
+    <form [formGroup]="recipeCategoryForm" (ngSubmit)="onSubmit()">
+  
+      <div class="form-group">
+        <label for="categoryName">*Name</label>
+        <input type="text" id="categoryName" name="categoryName" formControlName="categoryName" class="form-control"
+          [ngClass]="{ 'is-invalid':form.categoryName.touched && form.categoryName.errors }">
+        <div *ngIf="form.categoryName.errors" class="invalid-feedback">
+          <div *ngIf="form.categoryName.errors.required">Category name is required</div>
+        </div>
+      </div>
+
+      <div class="form-group" style="float:right">
+        <button type="submit" class="btn btn-secondary" [routerLink]="['/recipeCategories/']">Cancel</button>
+        <button type="submit" class="btn btn-success ml-3" [disabled]="!recipeCategoryForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

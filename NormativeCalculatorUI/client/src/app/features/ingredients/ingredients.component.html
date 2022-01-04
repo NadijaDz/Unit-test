@@ -1,0 +1,54 @@
+<div class="table-responsive bg-white shadow rounded mt-4">
+  <div class="container" style="margin-top: 100px;">
+    <h1>Ingredients</h1>
+    <div class="btn-right">
+      <button class="btn btn-info ml-3" type="button" (click)="open(null)">Add new ingredient</button>
+    </div>
+
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Name </th>
+          <th scope="col">Unit price</th>
+          <th scope="col">Unit quantity</th>
+          <th scope="col">Measure unit </th>
+          <th scope="col">Cost ingredient</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tr>
+        <td><input type="text" (input)="search()" id="userName" name="userName" [(ngModel)]="nameFilter" /></td>
+        <td></td>
+        <td style="display: flex;">
+          <label>Min: </label><input style="width: 100px;" type="number" min="1" (input)="search()" id="unitQuantityMin"
+            name="unitQuantityMin" [(ngModel)]="unitQuantityMin" />
+          <label>&nbsp; Max: </label><input style="width: 100px;" type="number" min="{{unitQuantityMin}}"
+            (input)="search()" id="unitQuantityMax" name="unitQuantityMax" [(ngModel)]="unitQuantityMax" />
+        </td>
+
+        <td> <select style="width: 100px;" id="measureFilter" name="measureFilter" [(ngModel)]="measureFilter"
+            (input)="search()">
+            <option [ngValue]="unit" *ngFor="let unit of measureEnumKeys;">
+              {{measureUnits[unit]}}
+            </option>
+          </select>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tbody>
+        <tr *ngFor="let ingredient of ingredients">
+          <td>{{ingredient.name}}</td>
+          <td>{{ingredient.unitPrice}}</td>
+          <td>{{ingredient.unitQuantity}}</td>
+          <td>{{ingredient.measureUnit}}</td>
+          <td>{{ingredient.costIngredient}} KM</td>
+          <td class="btn-right">
+            <button type="button" class="btn btn-info mr-2" (click)="open(ingredient)">Edit</button>
+            <button type="button" class="btn btn-danger" (click)="delete(ingredient.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

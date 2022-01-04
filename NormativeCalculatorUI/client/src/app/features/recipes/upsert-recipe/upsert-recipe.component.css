@@ -1,0 +1,25 @@
+.custom-disabled option:disabled{
+    background: rgba(170,170,170,0.3);
+    cursor: not-allowed;
+}
+
+.container .scroll-div{
+    overflow: auto;
+    max-height: 400px;
+    height: auto;
+}
+
+.container .ingredient-control{
+    padding: 5px;
+}
+
+.container .float-btn{
+    float:right
+}
+.container.margin-container{
+    margin-top: 100px;
+}
+.container .div-cost{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink='/' routerLinkActive='active'>Normative Calculator</a>
+    <ul class="navbar-nav">
+      <ng-container>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/recipeCategories' routerLinkActive='active'>Recipe Categories</a>
+        </li>
+        <li class="nav-item" *ngIf="isUserLoggedIn">
+          <a class="nav-link" routerLink='/ingredients' routerLinkActive='active'>Ingredients</a>
+        </li>
+        <li class="nav-item ml-4" *ngIf="isUserLoggedIn">
+          <a class="nav-link btn btn-outline-secondary" (click)="logout()" routerLinkActive='active'>Logout</a>
+        </li>
+        <li class="nav-item ml-4" *ngIf="!isUserLoggedIn">
+          <a class="nav-link btn btn-outline-secondary" routerLink='/login' routerLinkActive='active'>Login</a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</nav>
