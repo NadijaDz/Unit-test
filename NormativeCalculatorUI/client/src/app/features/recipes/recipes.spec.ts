@@ -9,7 +9,7 @@ import { By } from '@angular/platform-browser';
 import { Recipe } from 'src/app/core/models/recipe.model';
 import { FormsModule } from '@angular/forms';
 import Spy = jasmine.Spy;
-import { of } from 'rxjs';
+import { async, of } from 'rxjs';
 import { DebugElement, ElementRef, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -25,7 +25,7 @@ describe('RecipesComponent', () => {
      providers: [
        // {provide: RecipesService, useValue: recipeService}
      ],
-     imports: [HttpClientTestingModule, RouterTestingModule, NgxBootstrapConfirmModule, ToastrModule.forRoot()]
+     imports: [HttpClientTestingModule, RouterTestingModule, NgxBootstrapConfirmModule, ToastrModule.forRoot(), FormsModule]
    })
      .compileComponents();
  });
@@ -33,9 +33,8 @@ describe('RecipesComponent', () => {
   beforeEach(
     waitForAsync(() => {
       recipeService = jasmine.createSpyObj(['get']);
-     (recipeService.get as Spy).and.returnValue(of(recipes()));
+     (recipeService.get as Spy).and.returnValue(of(recipes));
   }));
- 
 
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipesComponent);
@@ -60,10 +59,10 @@ describe('RecipesComponent', () => {
     it('Should have a category name for recipe', () => {
       const categoryName = fixture.debugElement.query(By.css('h1')).nativeElement;
       expect(categoryName.innerHTML).toBe('Recipes for category ');
+
     });
   });
-
-
+  
   // it('should fetch data from services', () => {
   //   //debugger;
   //   // spyOn(component, 'getRecipes');
@@ -73,6 +72,11 @@ describe('RecipesComponent', () => {
   //   // expect(component.getRecipes).toHaveBeenCalled();
   
   //   expect(recipeService.get).toHaveBeenCalled();
+  // });
+
+  // it('should have recipes data', () => {
+  //   expect(component.recipes).toBeTruthy();
+  //   expect(component.recipes.length).toBeGreaterThan(0);
   // });
 
 
@@ -85,7 +89,6 @@ it('should load the data when click on Load more button', fakeAsync(() => {
   expect(component.loadMore).toHaveBeenCalled();
 
 })); 
-
 
 beforeEach(() => {
   submitEl = fixture.debugElement;
@@ -104,9 +107,24 @@ it('should return load more data', () => {
   expect(component.loadMore).toBeTruthy();
 }); 
 
+
+beforeEach(
+  waitForAsync(() => {
+    recipeService = jasmine.createSpyObj(['get']);
+   (recipeService.get as Spy).and.returnValue(of(recipes));
+}));
+
+it('should call get method from service', () => {
+
+   recipeService.get(null).subscribe((data)=>{
+    expect(data).toEqual(recipes);
+   });
+   
+});
+
   const UnmockedDate = Date;
-  const recipes = (): Recipe[] => [
-    {
+  const recipes: Recipe[] = 
+    [{
       id: 1,
       name: 'Recipe 1',
       description: 'Description for recipe 1',
@@ -115,6 +133,17 @@ it('should return load more data', () => {
       userId: 1,
       isDeleted: false,
       recommendedPrice: 10
-    }];
+    },
+    {
+      id: 2,
+      name: 'Recipe 2',
+      description: 'Description for recipe 2',
+      recipeCategoryId: 1,
+      createdAt: new UnmockedDate('2021-01-01'),
+      userId: 1,
+      isDeleted: false,
+      recommendedPrice: 20
+    },
+  ];
 
 });
