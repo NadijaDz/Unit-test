@@ -12,6 +12,7 @@ import Spy = jasmine.Spy;
 import { async, of } from 'rxjs';
 import { DebugElement, ElementRef, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ItemsList } from '@ng-select/ng-select/lib/items-list';
 
 describe('RecipesComponent', () => {
   let component: RecipesComponent;
@@ -29,12 +30,6 @@ describe('RecipesComponent', () => {
    })
      .compileComponents();
  });
-
-  beforeEach(
-    waitForAsync(() => {
-      recipeService = jasmine.createSpyObj(['get']);
-     (recipeService.get as Spy).and.returnValue(of(recipes));
-  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipesComponent);
@@ -62,7 +57,7 @@ describe('RecipesComponent', () => {
 
     });
   });
-  
+
   // it('should fetch data from services', () => {
   //   //debugger;
   //   // spyOn(component, 'getRecipes');
@@ -97,8 +92,6 @@ beforeEach(() => {
 it('Disable load more set to false the load more buttons', () => {
 
   component.isLodaMore = false;
-  console.log(component.isLodaMore);
- // component.recipes = null;
   fixture.detectChanges();
   expect(submitEl.nativeElement.querySelector('button').disabled).toBeTruthy();
 }); 
@@ -109,17 +102,68 @@ it('should return load more data', () => {
 
 
 beforeEach(
-  waitForAsync(() => {
-    recipeService = jasmine.createSpyObj(['get']);
+  () => {
+    recipeService = jasmine.createSpyObj(['get', 'getById']);
    (recipeService.get as Spy).and.returnValue(of(recipes));
-}));
+   (recipeService.getById as Spy).and.returnValue(of(recipes.filter((item)=> item.id == 1)));
+});
 
 it('should call get method from service', () => {
-
    recipeService.get(null).subscribe((data)=>{
     expect(data).toEqual(recipes);
    });
-   
+});
+
+it('should call getById method from service', () => {
+   recipeService.getById('1').subscribe((data)=>{
+   expect(data).toEqual(recipes.filter((item)=> item.id == 1));
+   });
+});
+
+
+it('should test the table ', fakeAsync((done) => {
+  expect(component.recipes).toEqual(recipes);
+  tick(500);
+  fixture.detectChanges();
+  fixture.whenStable().then(() => {fixture.detectChanges();
+
+    let tableRows = fixture.nativeElement.querySelectorAll('tr');
+    expect(tableRows.length).toBe(1);
+
+    // Header row
+    let headerRow = tableRows[0];
+    expect(headerRow.cells[0].innerHTML).toBe('Name');
+    expect(headerRow.cells[1].innerHTML).toBe('Cost');
+    expect(headerRow.cells[2].innerHTML).toBe('Description');
+
+    // Data rows
+     let row1 = tableRows[1];
+
+    console.log('row ');
+
+    expect(row1.cells[0].innerHTML).toBe('Recipe 1');
+    expect(row1.cells[1].innerHTML).toBe('10');
+    expect(row1.cells[2].innerHTML).toBe('Description for recipe 1');
+
+    // Test more rows here..
+
+    done();
+  });
+}));
+
+describe('Table', () => {
+  let tableTh: DebugElement[];
+  let tableTd: DebugElement[];
+  beforeEach(() => {
+    tableTh = fixture.debugElement.queryAll(By.css('table th'));
+    tableTd = fixture.debugElement.queryAll(By.css('table tr'));
+  });
+  it('should have 5 th in table', () => {
+    expect(tableTh.length).toEqual(5);
+  });
+  it('should have 5 td in table', () => {
+    expect(tableTd.length).toEqual(1);
+  });
 });
 
   const UnmockedDate = Date;
