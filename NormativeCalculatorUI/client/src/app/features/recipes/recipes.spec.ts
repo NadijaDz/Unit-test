@@ -1,43 +1,48 @@
 import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 import { RecipesService } from 'src/app/core/services/recipes.service';
 import { RecipesComponent } from './recipes.component';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NgxBootstrapConfirmModule } from 'ngx-bootstrap-confirm';
 import { ToastrModule } from 'ngx-toastr';
 import { By } from '@angular/platform-browser';
-import { MeasureUnit } from 'src/app/core/models/measure-unit.model';
-import { of } from 'rxjs';
 import { Recipe } from 'src/app/core/models/recipe.model';
+import { FormsModule } from '@angular/forms';
 import Spy = jasmine.Spy;
-import { RecipeDetailComponent } from './recipe-details/recipe-detail/recipe-detail.component';
+import { of } from 'rxjs';
+import { DebugElement, ElementRef, NO_ERRORS_SCHEMA } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 describe('RecipesComponent', () => {
   let component: RecipesComponent;
   let fixture: ComponentFixture<RecipesComponent>;
   let recipeService: RecipesService;
+  let submitEl: DebugElement;
+
   beforeEach( () => {
-     TestBed.configureTestingModule({
-      declarations: [RecipesComponent],
-      providers: [
-        // {provide: RecipesService, useValue: recipeService}
-      ],
-      imports: [HttpClientTestingModule, RouterTestingModule, NgxBootstrapConfirmModule, ToastrModule.forRoot()]
-    })
-      .compileComponents();
-  });
+    TestBed.configureTestingModule({
+     declarations: [RecipesComponent],
+     providers: [
+       // {provide: RecipesService, useValue: recipeService}
+     ],
+     imports: [HttpClientTestingModule, RouterTestingModule, NgxBootstrapConfirmModule, ToastrModule.forRoot()]
+   })
+     .compileComponents();
+ });
+
   beforeEach(
     waitForAsync(() => {
       recipeService = jasmine.createSpyObj(['get']);
      (recipeService.get as Spy).and.returnValue(of(recipes()));
   }));
+ 
 
   beforeEach(() => {
     fixture = TestBed.createComponent(RecipesComponent);
     component = fixture.debugElement.componentInstance;
+    recipeService = TestBed.inject(RecipesService);
     fixture.detectChanges();
   });
-
 
   describe('Hello', () => {
     it('says hello', () => {
@@ -58,43 +63,42 @@ describe('RecipesComponent', () => {
     });
   });
 
+
+  // it('should fetch data from services', () => {
+  //   //debugger;
+  //   // spyOn(component, 'getRecipes');
+  //   // spyOn(recipeService, 'get');
+  //   //component.ngOnInit();
+  //   // component.getRecipes();
+  //   // expect(component.getRecipes).toHaveBeenCalled();
   
-  // describe('Recipes details', () => {
-  //   it('Details about recipes', fakeAsync(() => {
-  //     let response = {
-  //       "name": 'Recipe 1',
-  //       "description": 'Description for Recipe 1',
-  //       "recipeCategoryId": 1,
-  //       "createdAt": Date.now,
-  //       "ingredients": [
-  //         {
-  //           "ingredientId": 1,
-  //           "measureUnit": MeasureUnit.kg,
-  //           "unitQuantity": 5,
-  //         }]
-  //       };
-
-     
-
-  //   }));
+  //   expect(recipeService.get).toHaveBeenCalled();
   // });
 
-//   describe('Category', () => {
-//   it('should fetch data from services', () => {
-//     // component.ngOnInit();
-//     expect(recipeService.get).toHaveBeenCalled();
-//   });
-// });
 
-it('should open the recipe details  when clicking on Detail button', fakeAsync(() => {
-  let buttonElement = fixture.debugElement.query(By.css('.details'));
-  
-  spyOn(component, 'getRecipeDetails');
-  //Trigger click event after spyOn
+it('should load the data when click on Load more button', fakeAsync(() => {
+  let buttonElement = fixture.debugElement.query(By.css('.lodaMore-btn')); 
+
+  spyOn(component, 'loadMore');
   buttonElement.triggerEventHandler('click', null);
   tick();
-  expect(component.getRecipeDetails).toHaveBeenCalled();
+  expect(component.loadMore).toHaveBeenCalled();
+
 })); 
+
+
+beforeEach(() => {
+  submitEl = fixture.debugElement;
+});
+
+it('Disable load more set to false the load more buttons', () => {
+
+  component.isLodaMore = false;
+  console.log(component.isLodaMore);
+ // component.recipes = null;
+  fixture.detectChanges();
+  expect(submitEl.nativeElement.querySelector('button').disabled).toBeTruthy();
+}); 
 
 it('should return load more data', () => {
   expect(component.loadMore).toBeTruthy();

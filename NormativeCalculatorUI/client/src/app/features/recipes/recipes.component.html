@@ -26,7 +26,7 @@
           <td>{{recipe.totalCost}} KM</td>
           <td title="{{recipe.description}}">{{(recipe.description .length>10)? (recipe.description |
             slice:0:200)+'...':(recipe.description ) }}</td>
-          <td><button (click)="getRecipeDetails(recipe.id)" class="details btn btn-outline-dark">Details</button></td>
+          <td><button (click)="getRecipeDetails(recipe.id)" id="tt" class="details btn btn-outline-dark">Details</button></td>
           <td class="upsert-table-btn" *ngIf="isUserLoggedIn">
             <button type="button" class="btn btn-info mr-2" [routerLink]="['upsert-recipe', recipe.id]">Edit</button>
             <button type="button" class="btn btn-danger" (click)="delete(recipe.id)">Delete</button>
@@ -34,6 +34,7 @@
         </tr>
       </tbody>
     </table>
-    <button class="btn btn-dark" type="button" (click)="loadMore()" [disabled]="!isLodaMore">Load more</button>
+    <button class="lodaMore-btn btn btn-dark" type="button" (click)="loadMore()" [disabled]="!isLodaMore">Load more</button>
   </div>
 </div>
+
