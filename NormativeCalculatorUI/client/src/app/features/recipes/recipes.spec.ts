@@ -193,6 +193,7 @@ describe('Table', () => {
 
   });
 
+  console.log('novi test');
 });
 
 
