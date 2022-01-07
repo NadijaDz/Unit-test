@@ -121,35 +121,35 @@ it('should call getById method from service', () => {
 });
 
 
-it('should test the table ', fakeAsync((done) => {
-  expect(component.recipes).toEqual(recipes);
-  tick(500);
-  fixture.detectChanges();
-  fixture.whenStable().then(() => {fixture.detectChanges();
+// it('should test the table ', fakeAsync((done) => {
+//   expect(component.recipes).toEqual(recipes);
+//   tick(500);
+//   fixture.detectChanges();
+//   fixture.whenStable().then(() => {fixture.detectChanges();
 
-    let tableRows = fixture.nativeElement.querySelectorAll('tr');
-    expect(tableRows.length).toBe(1);
+//     let tableRows = fixture.nativeElement.querySelectorAll('tr');
+//     expect(tableRows.length).toBe(1);
 
-    // Header row
-    let headerRow = tableRows[0];
-    expect(headerRow.cells[0].innerHTML).toBe('Name');
-    expect(headerRow.cells[1].innerHTML).toBe('Cost');
-    expect(headerRow.cells[2].innerHTML).toBe('Description');
+//     // Header row
+//     let headerRow = tableRows[0];
+//     expect(headerRow.cells[0].innerHTML).toBe('Name');
+//     expect(headerRow.cells[1].innerHTML).toBe('Cost');
+//     expect(headerRow.cells[2].innerHTML).toBe('Description');
 
-    // Data rows
-     let row1 = tableRows[1];
+//     // Data rows
+//      let row1 = tableRows[1];
 
-    console.log('row ');
+//     console.log('row ');
 
-    expect(row1.cells[0].innerHTML).toBe('Recipe 1');
-    expect(row1.cells[1].innerHTML).toBe('10');
-    expect(row1.cells[2].innerHTML).toBe('Description for recipe 1');
+//     expect(row1.cells[0].innerHTML).toBe('Recipe 1');
+//     expect(row1.cells[1].innerHTML).toBe('10');
+//     expect(row1.cells[2].innerHTML).toBe('Description for recipe 1');
 
-    // Test more rows here..
+//     // Test more rows here..
 
-    done();
-  });
-}));
+//     done();
+//   });
+// }));
 
 describe('Table', () => {
   let tableTh: DebugElement[];
@@ -162,9 +162,40 @@ describe('Table', () => {
     expect(tableTh.length).toEqual(5);
   });
   it('should have 5 td in table', () => {
+    console.log('length component' + component.recipes.length)
     expect(tableTd.length).toEqual(1);
+  }); 
+
+  it('should render Recipe category 1', () => {
+    component.nameofCategory = 'Recipe category 1';
+    fixture.detectChanges();
+    const debugElement = fixture.debugElement.query(By.css('h1'));
+    const element: HTMLElement = debugElement.nativeElement;
+    expect(element.innerText).toContain('Recipe category 1');
+    });
+
+    
+  it('should have 2 recipe records', () => {
+
+    fixture.detectChanges();
+    const twoElement = fixture.debugElement.queryAll(By.css('tr'));
+    const availableUserRecords = twoElement.slice(1);
+    expect(availableUserRecords.length).toBe(2);
+    });
+ 
+ 
+ it('should call the details of recipe  On Details click', () => {
+
+  fixture.detectChanges();
+  const element = fixture.debugElement.query(By.css('.details')).triggerEventHandler('click', {});
+  fixture.whenStable();
+   expect(component.getRecipeDetails).toHaveBeenCalled();
+
   });
+
 });
+
+
 
   const UnmockedDate = Date;
   const recipes: Recipe[] = 
